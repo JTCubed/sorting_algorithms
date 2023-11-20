@@ -11,11 +11,19 @@ int main(void)
 {
     int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
     size_t n = sizeof(array) / sizeof(array[0]);
+    int Set1[] = {7, 9, 11, 13, 14, 16, 17, 18, 19, 20};
+    size_t k = sizeof(Set1) / sizeof(Set1[0]);
 
     print_array(array, n);
     printf("\n");
     bubble_sort(array, n);
     printf("\n");
     print_array(array, n);
+    printf("\n");
+    print_array(array, n);
+    printf("\n");
+    bubble_sort(array, n);
+    printf("\n");
+
     return (0);
 }
