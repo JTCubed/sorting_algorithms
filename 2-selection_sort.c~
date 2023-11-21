@@ -1,0 +1,28 @@
+#include "sort.h"
+
+void selection_sort(int *array, size_t size)
+{
+	size_t i, j;
+	int lowest, tmp, tmp2;
+
+	if (array == NULL || size < 2)
+		return;
+
+	for (i = 0; i < size; i++)
+	{
+		for (j = i; j < size; j++)
+		{
+			lowest = array[i];
+			if (array[j] < lowest)
+			{
+				tmp = j;
+				lowest = array[j];
+			}
+		}
+		tmp2 = array[i];
+		array[tmp] = tmp2;
+		array[i] = lowest;
+		print_array(array, size);
+	}
+
+}
