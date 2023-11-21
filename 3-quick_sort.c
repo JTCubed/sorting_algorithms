@@ -9,6 +9,7 @@
 void quicksort_recursive(int *array, int lo, int hi, size_t size)
 {
 	int p;
+
 	if (lo < hi)
 	{
 		p = partition_(array, lo, hi, size);

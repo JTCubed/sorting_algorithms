@@ -26,4 +26,7 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void quicksort_recursive(int *array, int lo, int hi, size_t size);
 int partition_(int *array, int lo, int hi, size_t size);
+void merge(int *array, int *temp, size_t start, size_t mid, size_t end);
+void merge_sort_recursive(int *array, int *temp, size_t start, size_t end);
+void merge_sort(int *array, size_t size);
 #endif
